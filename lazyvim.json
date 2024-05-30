@@ -3,8 +3,10 @@
     "lazyvim.plugins.extras.coding.copilot-chat",
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.editor.aerial",
+    "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.editor.illuminate",
     "lazyvim.plugins.extras.editor.mini-move",
+    "lazyvim.plugins.extras.editor.outline",
     "lazyvim.plugins.extras.lang.elixir",
     "lazyvim.plugins.extras.lang.rust",
     "lazyvim.plugins.extras.lang.vue",
@@ -14,5 +16,5 @@
   "news": {
     "NEWS.md": "4964"
   },
-  "version": 5
+  "version": 6
 }
