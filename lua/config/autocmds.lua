@@ -1,7 +1,12 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
-vim.o.guifont = "Comic Code:h12"
+if (vim.loop.os_uname().sysname == "Darwin") then
+  vim.o.guifont = "Comic Code:h14"
+else
+  vim.o.guifont = "Comic Code:h12"
+end
+
 local wk = require("which-key")
 
 wk.register({
