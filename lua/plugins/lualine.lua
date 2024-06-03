@@ -1,4 +1,11 @@
 local icons = require("lazyvim.config").icons
+require("battery").setup({})
+local nvimbattery = {
+  function()
+    return require("battery").get_status_line()
+  end,
+  separator = ""
+}
 
 return {
   "nvim-lualine/lualine.nvim",
@@ -18,6 +25,12 @@ return {
         },
         { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
         { LazyVim.lualine.pretty_path() }
+      },
+      lualine_z = {
+        {function()
+          return " " .. os.date("%R")
+        end, separator = ""},
+        nvimbattery
       }
     }
   }
